@@ -211,3 +211,10 @@ export function rectangle(name: string): LayerCommand {
 export function app(name: string): LayerCommand {
   return open(`-a '${name}.app'`);
 }
+
+/**
+ * Shortcut for "Open an app" command (of which there are a bunch)
+ */
+export function finder(name: string): LayerCommand {
+  return open(`${name}`);
+}
