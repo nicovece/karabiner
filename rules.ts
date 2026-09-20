@@ -334,6 +334,79 @@ const rules: KarabinerRules[] = [
       },
     },
     // q = specials. I know I know, but it's the only one left
+    // e = numbers
+    e: {
+      u: {
+        to: [
+          {
+            key_code: "7",
+          },
+        ],
+      },
+      i: {
+        to: [
+          {
+            key_code: "8",
+          },
+        ],
+      },
+      o: {
+        to: [
+          {
+            key_code: "9",
+          },
+        ],
+      },
+      j: {
+        to: [
+          {
+            key_code: "4",
+          },
+        ],
+      },
+      k: {
+        to: [
+          {
+            key_code: "5",
+          },
+        ],
+      },
+      l: {
+        to: [
+          {
+            key_code: "6",
+          },
+        ],
+      },
+      m: {
+        to: [
+          {
+            key_code: "1",
+          },
+        ],
+      },
+      comma: {
+        to: [
+          {
+            key_code: "2",
+          },
+        ],
+      },
+      period: {
+        to: [
+          {
+            key_code: "3",
+          },
+        ],
+      },
+      n: {
+        to: [
+          {
+            key_code: "0",
+          },
+        ],
+      },
+    },
     //
     c: {
       j: {
