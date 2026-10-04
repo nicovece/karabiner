@@ -81,6 +81,7 @@ const rules: KarabinerRules[] = [
       o: open("https://www.ho-mobile.it/my-account/riepilogo.html"),
     },
     // f = "F"inder
+    /*
     f: {
       h: finder("~/"),
       r: finder("~/Documents/repos"),
@@ -95,6 +96,7 @@ const rules: KarabinerRules[] = [
       n: finder("~/Downloads"),
       t: finder("~/Dropbox/Screenshot"),
     },
+    */
     // o = "Open" applications
     a: {
       r: app("Arc"),
@@ -180,7 +182,7 @@ const rules: KarabinerRules[] = [
     },
 
     // s = "System"
-    s: {
+    x: {
       u: {
         to: [
           {
@@ -335,7 +337,7 @@ const rules: KarabinerRules[] = [
     },
     // q = specials. I know I know, but it's the only one left
     // e = numbers
-    e: {
+    f: {
       u: {
         to: [
           {
@@ -408,13 +410,14 @@ const rules: KarabinerRules[] = [
       },
     },
     //
+    // specials
     c: {
       j: {
         // [
         to: [
           {
             key_code: "open_bracket",
-            modifiers: ["option"],
+            modifiers: ["right_option"],
           },
         ],
       },
@@ -423,7 +426,7 @@ const rules: KarabinerRules[] = [
         to: [
           {
             key_code: "close_bracket",
-            modifiers: ["option"],
+            modifiers: ["right_option"],
           },
         ],
       },
@@ -432,7 +435,7 @@ const rules: KarabinerRules[] = [
         to: [
           {
             key_code: "open_bracket",
-            modifiers: ["option", "shift"],
+            modifiers: ["right_option", "shift"],
           },
         ],
       },
@@ -441,7 +444,7 @@ const rules: KarabinerRules[] = [
         to: [
           {
             key_code: "close_bracket",
-            modifiers: ["option", "shift"],
+            modifiers: ["right_option", "shift"],
           },
         ],
       },
@@ -468,7 +471,7 @@ const rules: KarabinerRules[] = [
         to: [
           {
             key_code: "9",
-            modifiers: ["option"],
+            modifiers: ["right_option"],
           },
         ],
       },
@@ -477,7 +480,7 @@ const rules: KarabinerRules[] = [
         to: [
           {
             key_code: "5",
-            modifiers: ["option"],
+            modifiers: ["right_option"],
           },
         ],
       },
@@ -485,7 +488,7 @@ const rules: KarabinerRules[] = [
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
     // so that hjkl work like they do in vim
-    x: {
+    s: {
       h: {
         to: [{ key_code: "left_arrow" }],
       },
@@ -570,6 +573,7 @@ const rules: KarabinerRules[] = [
   // },
 
   /* home row mods */
+  /*
   {
     description: "Home row mods - shift, ctrl, opt, cmd",
     manipulators: [
@@ -1718,6 +1722,7 @@ const rules: KarabinerRules[] = [
       },
     ],
   },
+  */
 ];
 
 fs.writeFileSync(

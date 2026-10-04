@@ -81,11 +81,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_a",
                     "value": 0
                   },
@@ -96,7 +91,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
@@ -106,7 +101,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -116,7 +111,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -171,11 +166,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_a",
                     "value": 0
                   },
@@ -186,7 +176,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
@@ -196,7 +186,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -206,7 +196,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -493,389 +483,6 @@
             ]
           },
           {
-            "description": "Hyper Key sublayer \"f\"",
-            "manipulators": [
-              {
-                "description": "Toggle Hyper sublayer f",
-                "type": "basic",
-                "from": {
-                  "key_code": "f",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to_after_key_up": [
-                  {
-                    "set_variable": {
-                      "name": "hyper_sublayer_f",
-                      "value": 0
-                    }
-                  }
-                ],
-                "to": [
-                  {
-                    "set_variable": {
-                      "name": "hyper_sublayer_f",
-                      "value": 1
-                    }
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_spacebar",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_a",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_w",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_d",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_e",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_c",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_x",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_q",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_r",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/"
-                  }
-                ],
-                "description": "Open ~/",
-                "type": "basic",
-                "from": {
-                  "key_code": "h",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/Documents/repos"
-                  }
-                ],
-                "description": "Open ~/Documents/repos",
-                "type": "basic",
-                "from": {
-                  "key_code": "r",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/Sites/localhost"
-                  }
-                ],
-                "description": "Open ~/Sites/localhost",
-                "type": "basic",
-                "from": {
-                  "key_code": "l",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/Sites/localhost/salon24_docker"
-                  }
-                ],
-                "description": "Open ~/Sites/localhost/salon24_docker",
-                "type": "basic",
-                "from": {
-                  "key_code": "s",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/careerfoundry"
-                  }
-                ],
-                "description": "Open ~/careerfoundry",
-                "type": "basic",
-                "from": {
-                  "key_code": "c",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/work"
-                  }
-                ],
-                "description": "Open ~/work",
-                "type": "basic",
-                "from": {
-                  "key_code": "w",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/Documents/Documenti_importanti"
-                  }
-                ],
-                "description": "Open ~/Documents/Documenti_importanti",
-                "type": "basic",
-                "from": {
-                  "key_code": "d",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/Documents"
-                  }
-                ],
-                "description": "Open ~/Documents",
-                "type": "basic",
-                "from": {
-                  "key_code": "q",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open /Applications"
-                  }
-                ],
-                "description": "Open /Applications",
-                "type": "basic",
-                "from": {
-                  "key_code": "a",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/.config"
-                  }
-                ],
-                "description": "Open ~/.config",
-                "type": "basic",
-                "from": {
-                  "key_code": "j",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/Downloads"
-                  }
-                ],
-                "description": "Open ~/Downloads",
-                "type": "basic",
-                "from": {
-                  "key_code": "n",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open ~/Dropbox/Screenshot"
-                  }
-                ],
-                "description": "Open ~/Dropbox/Screenshot",
-                "type": "basic",
-                "from": {
-                  "key_code": "t",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 1
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "description": "Hyper Key sublayer \"a\"",
             "manipulators": [
               {
@@ -918,17 +525,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_w",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
@@ -938,7 +540,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -948,7 +550,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -1349,17 +951,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_a",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
@@ -1369,7 +966,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -1379,7 +976,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -1868,13 +1465,13 @@
             ]
           },
           {
-            "description": "Hyper Key sublayer \"s\"",
+            "description": "Hyper Key sublayer \"x\"",
             "manipulators": [
               {
-                "description": "Toggle Hyper sublayer s",
+                "description": "Toggle Hyper sublayer x",
                 "type": "basic",
                 "from": {
-                  "key_code": "s",
+                  "key_code": "x",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -1884,7 +1481,7 @@
                 "to_after_key_up": [
                   {
                     "set_variable": {
-                      "name": "hyper_sublayer_s",
+                      "name": "hyper_sublayer_x",
                       "value": 0
                     }
                   }
@@ -1892,7 +1489,7 @@
                 "to": [
                   {
                     "set_variable": {
-                      "name": "hyper_sublayer_s",
+                      "name": "hyper_sublayer_x",
                       "value": 1
                     }
                   }
@@ -1906,11 +1503,6 @@
                   {
                     "type": "variable_if",
                     "name": "hyper_sublayer_b",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -1930,7 +1522,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -1940,7 +1532,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -1978,7 +1570,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2001,7 +1593,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2024,7 +1616,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2047,7 +1639,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2074,7 +1666,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2097,7 +1689,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2120,7 +1712,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2144,7 +1736,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2168,7 +1760,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2194,7 +1786,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2217,7 +1809,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2240,7 +1832,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2263,7 +1855,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 1
                   }
                 ]
@@ -2313,11 +1905,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_a",
                     "value": 0
                   },
@@ -2328,12 +1915,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -2343,7 +1930,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -2562,13 +2149,13 @@
             ]
           },
           {
-            "description": "Hyper Key sublayer \"e\"",
+            "description": "Hyper Key sublayer \"f\"",
             "manipulators": [
               {
-                "description": "Toggle Hyper sublayer e",
+                "description": "Toggle Hyper sublayer f",
                 "type": "basic",
                 "from": {
-                  "key_code": "e",
+                  "key_code": "f",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -2578,7 +2165,7 @@
                 "to_after_key_up": [
                   {
                     "set_variable": {
-                      "name": "hyper_sublayer_e",
+                      "name": "hyper_sublayer_f",
                       "value": 0
                     }
                   }
@@ -2586,7 +2173,7 @@
                 "to": [
                   {
                     "set_variable": {
-                      "name": "hyper_sublayer_e",
+                      "name": "hyper_sublayer_f",
                       "value": 1
                     }
                   }
@@ -2604,11 +2191,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_a",
                     "value": 0
                   },
@@ -2619,7 +2201,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
@@ -2634,7 +2216,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -2672,7 +2254,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2695,7 +2277,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2718,7 +2300,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2741,7 +2323,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2764,7 +2346,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2787,7 +2369,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2810,7 +2392,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2833,7 +2415,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2856,7 +2438,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2879,7 +2461,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 1
                   }
                 ]
@@ -2929,11 +2511,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_a",
                     "value": 0
                   },
@@ -2944,7 +2521,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
@@ -2954,12 +2531,12 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -2984,7 +2561,7 @@
                   {
                     "key_code": "open_bracket",
                     "modifiers": [
-                      "option"
+                      "right_option"
                     ]
                   }
                 ],
@@ -3010,7 +2587,7 @@
                   {
                     "key_code": "close_bracket",
                     "modifiers": [
-                      "option"
+                      "right_option"
                     ]
                   }
                 ],
@@ -3036,7 +2613,7 @@
                   {
                     "key_code": "open_bracket",
                     "modifiers": [
-                      "option",
+                      "right_option",
                       "shift"
                     ]
                   }
@@ -3063,7 +2640,7 @@
                   {
                     "key_code": "close_bracket",
                     "modifiers": [
-                      "option",
+                      "right_option",
                       "shift"
                     ]
                   }
@@ -3142,7 +2719,7 @@
                   {
                     "key_code": "9",
                     "modifiers": [
-                      "option"
+                      "right_option"
                     ]
                   }
                 ],
@@ -3168,7 +2745,7 @@
                   {
                     "key_code": "5",
                     "modifiers": [
-                      "option"
+                      "right_option"
                     ]
                   }
                 ],
@@ -3192,13 +2769,13 @@
             ]
           },
           {
-            "description": "Hyper Key sublayer \"x\"",
+            "description": "Hyper Key sublayer \"s\"",
             "manipulators": [
               {
-                "description": "Toggle Hyper sublayer x",
+                "description": "Toggle Hyper sublayer s",
                 "type": "basic",
                 "from": {
-                  "key_code": "x",
+                  "key_code": "s",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -3208,7 +2785,7 @@
                 "to_after_key_up": [
                   {
                     "set_variable": {
-                      "name": "hyper_sublayer_x",
+                      "name": "hyper_sublayer_s",
                       "value": 0
                     }
                   }
@@ -3216,7 +2793,7 @@
                 "to": [
                   {
                     "set_variable": {
-                      "name": "hyper_sublayer_x",
+                      "name": "hyper_sublayer_s",
                       "value": 1
                     }
                   }
@@ -3234,11 +2811,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_a",
                     "value": 0
                   },
@@ -3249,7 +2821,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
@@ -3259,7 +2831,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -3302,7 +2874,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -3325,7 +2897,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -3348,7 +2920,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -3371,7 +2943,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -3397,7 +2969,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -3423,7 +2995,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -3450,7 +3022,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -3473,7 +3045,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -3496,7 +3068,7 @@
                 "conditions": [
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ]
@@ -3546,11 +3118,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_a",
                     "value": 0
                   },
@@ -3561,7 +3128,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
@@ -3571,7 +3138,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -3581,7 +3148,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -3710,11 +3277,6 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_f",
-                    "value": 0
-                  },
-                  {
-                    "type": "variable_if",
                     "name": "hyper_sublayer_a",
                     "value": 0
                   },
@@ -3725,7 +3287,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_s",
+                    "name": "hyper_sublayer_x",
                     "value": 0
                   },
                   {
@@ -3735,7 +3297,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_e",
+                    "name": "hyper_sublayer_f",
                     "value": 0
                   },
                   {
@@ -3745,7 +3307,7 @@
                   },
                   {
                     "type": "variable_if",
-                    "name": "hyper_sublayer_x",
+                    "name": "hyper_sublayer_s",
                     "value": 0
                   },
                   {
@@ -3879,1228 +3441,6 @@
                     "value": 1
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "description": "Home row mods - shift, ctrl, opt, cmd",
-            "manipulators": [
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "a"
-                    },
-                    {
-                      "key_code": "s"
-                    },
-                    {
-                      "key_code": "d"
-                    },
-                    {
-                      "key_code": "f"
-                    }
-                  ]
-                },
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                      "left_command",
-                      "left_option",
-                      "left_control"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "a"
-                    },
-                    {
-                      "key_code": "s"
-                    },
-                    {
-                      "key_code": "d"
-                    }
-                  ]
-                },
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                      "left_option",
-                      "left_control"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "a"
-                    },
-                    {
-                      "key_code": "d"
-                    },
-                    {
-                      "key_code": "f"
-                    }
-                  ]
-                },
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                      "left_command",
-                      "left_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "s"
-                    },
-                    {
-                      "key_code": "d"
-                    },
-                    {
-                      "key_code": "f"
-                    }
-                  ]
-                },
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_control",
-                    "modifiers": [
-                      "left_command",
-                      "left_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "a"
-                    },
-                    {
-                      "key_code": "s"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "a"
-                  },
-                  {
-                    "key_code": "s"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                      "left_control"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "s"
-                    },
-                    {
-                      "key_code": "a"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "s"
-                  },
-                  {
-                    "key_code": "a"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                      "left_control"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "a"
-                    },
-                    {
-                      "key_code": "d"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "a"
-                  },
-                  {
-                    "key_code": "d"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                      "left_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "d"
-                    },
-                    {
-                      "key_code": "a"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "d"
-                  },
-                  {
-                    "key_code": "a"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                      "left_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "a"
-                    },
-                    {
-                      "key_code": "f"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "a"
-                  },
-                  {
-                    "key_code": "f"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                      "left_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "f"
-                    },
-                    {
-                      "key_code": "a"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "f"
-                  },
-                  {
-                    "key_code": "a"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_shift",
-                    "modifiers": [
-                      "left_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "s"
-                    },
-                    {
-                      "key_code": "d"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "s"
-                  },
-                  {
-                    "key_code": "d"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_control",
-                    "modifiers": [
-                      "left_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "d"
-                    },
-                    {
-                      "key_code": "s"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "d"
-                  },
-                  {
-                    "key_code": "s"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_control",
-                    "modifiers": [
-                      "left_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "s"
-                    },
-                    {
-                      "key_code": "f"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "s"
-                  },
-                  {
-                    "key_code": "f"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_control",
-                    "modifiers": [
-                      "left_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "f"
-                    },
-                    {
-                      "key_code": "s"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "f"
-                  },
-                  {
-                    "key_code": "s"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_control",
-                    "modifiers": [
-                      "left_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "d"
-                    },
-                    {
-                      "key_code": "f"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "d"
-                  },
-                  {
-                    "key_code": "f"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_option",
-                    "modifiers": [
-                      "left_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "f"
-                    },
-                    {
-                      "key_code": "d"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "f"
-                  },
-                  {
-                    "key_code": "d"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "left_option",
-                    "modifiers": [
-                      "left_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "a"
-                },
-                "to_delayed_action": {
-                  "to_if_canceled": [
-                    {
-                      "key_code": "a"
-                    }
-                  ],
-                  "to_if_invoked": [
-                    {
-                      "key_code": "vk_none"
-                    }
-                  ]
-                },
-                "to_if_alone": [
-                  {
-                    "halt": true,
-                    "key_code": "a"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "halt": true,
-                    "key_code": "left_shift"
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "s"
-                },
-                "to_delayed_action": {
-                  "to_if_canceled": [
-                    {
-                      "key_code": "s"
-                    }
-                  ],
-                  "to_if_invoked": [
-                    {
-                      "key_code": "vk_none"
-                    }
-                  ]
-                },
-                "to_if_alone": [
-                  {
-                    "halt": true,
-                    "key_code": "s"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "halt": true,
-                    "key_code": "left_control"
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "d"
-                },
-                "to_delayed_action": {
-                  "to_if_canceled": [
-                    {
-                      "key_code": "d"
-                    }
-                  ],
-                  "to_if_invoked": [
-                    {
-                      "key_code": "vk_none"
-                    }
-                  ]
-                },
-                "to_if_alone": [
-                  {
-                    "halt": true,
-                    "key_code": "d"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "halt": true,
-                    "key_code": "left_option"
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "f"
-                },
-                "to_delayed_action": {
-                  "to_if_canceled": [
-                    {
-                      "halt": true,
-                      "key_code": "f"
-                    }
-                  ],
-                  "to_if_invoked": [
-                    {
-                      "key_code": "vk_none"
-                    }
-                  ]
-                },
-                "to_if_alone": [
-                  {
-                    "halt": true,
-                    "key_code": "f"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "halt": true,
-                    "key_code": "left_command"
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "j"
-                    },
-                    {
-                      "key_code": "k"
-                    },
-                    {
-                      "key_code": "l"
-                    },
-                    {
-                      "key_code": "semicolon"
-                    }
-                  ]
-                },
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_command",
-                      "right_option",
-                      "right_control"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "semicolon"
-                    },
-                    {
-                      "key_code": "l"
-                    },
-                    {
-                      "key_code": "k"
-                    }
-                  ]
-                },
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_option",
-                      "right_control"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "semicolon"
-                    },
-                    {
-                      "key_code": "k"
-                    },
-                    {
-                      "key_code": "j"
-                    }
-                  ]
-                },
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_command",
-                      "right_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "l"
-                    },
-                    {
-                      "key_code": "k"
-                    },
-                    {
-                      "key_code": "j"
-                    }
-                  ]
-                },
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_control",
-                    "modifiers": [
-                      "right_command",
-                      "right_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "semicolon"
-                    },
-                    {
-                      "key_code": "l"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "semicolon"
-                  },
-                  {
-                    "key_code": "l"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_control"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "l"
-                    },
-                    {
-                      "key_code": "semicolon"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "l"
-                  },
-                  {
-                    "key_code": "semicolon"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_control"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "semicolon"
-                    },
-                    {
-                      "key_code": "k"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "semicolon"
-                  },
-                  {
-                    "key_code": "k"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "k"
-                    },
-                    {
-                      "key_code": "semicolon"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "k"
-                  },
-                  {
-                    "key_code": "semicolon"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "semicolon"
-                    },
-                    {
-                      "key_code": "j"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "semicolon"
-                  },
-                  {
-                    "key_code": "j"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "j"
-                    },
-                    {
-                      "key_code": "semicolon"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "j"
-                  },
-                  {
-                    "key_code": "semicolon"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_shift",
-                    "modifiers": [
-                      "right_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "l"
-                    },
-                    {
-                      "key_code": "k"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "l"
-                  },
-                  {
-                    "key_code": "k"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_control",
-                    "modifiers": [
-                      "right_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "k"
-                    },
-                    {
-                      "key_code": "l"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "k"
-                  },
-                  {
-                    "key_code": "l"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_control",
-                    "modifiers": [
-                      "right_option"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "l"
-                    },
-                    {
-                      "key_code": "j"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "l"
-                  },
-                  {
-                    "key_code": "j"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_control",
-                    "modifiers": [
-                      "right_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "j"
-                    },
-                    {
-                      "key_code": "l"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "j"
-                  },
-                  {
-                    "key_code": "l"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_control",
-                    "modifiers": [
-                      "right_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "k"
-                    },
-                    {
-                      "key_code": "j"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "k"
-                  },
-                  {
-                    "key_code": "j"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_option",
-                    "modifiers": [
-                      "right_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "simultaneous": [
-                    {
-                      "key_code": "j"
-                    },
-                    {
-                      "key_code": "k"
-                    }
-                  ],
-                  "simultaneous_options": {
-                    "key_down_order": "strict"
-                  }
-                },
-                "to_if_alone": [
-                  {
-                    "key_code": "j"
-                  },
-                  {
-                    "key_code": "k"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "key_code": "right_option",
-                    "modifiers": [
-                      "right_command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "j"
-                },
-                "to_delayed_action": {
-                  "to_if_canceled": [
-                    {
-                      "key_code": "j"
-                    }
-                  ],
-                  "to_if_invoked": [
-                    {
-                      "key_code": "vk_none"
-                    }
-                  ]
-                },
-                "to_if_alone": [
-                  {
-                    "halt": true,
-                    "key_code": "j"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "halt": true,
-                    "key_code": "right_command"
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "k"
-                },
-                "to_delayed_action": {
-                  "to_if_canceled": [
-                    {
-                      "key_code": "k"
-                    }
-                  ],
-                  "to_if_invoked": [
-                    {
-                      "key_code": "vk_none"
-                    }
-                  ]
-                },
-                "to_if_alone": [
-                  {
-                    "halt": true,
-                    "key_code": "k"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "halt": true,
-                    "key_code": "right_option"
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "l"
-                },
-                "to_delayed_action": {
-                  "to_if_canceled": [
-                    {
-                      "key_code": "l"
-                    }
-                  ],
-                  "to_if_invoked": [
-                    {
-                      "key_code": "vk_none"
-                    }
-                  ]
-                },
-                "to_if_alone": [
-                  {
-                    "halt": true,
-                    "key_code": "l"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "halt": true,
-                    "key_code": "right_control"
-                  }
-                ],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "semicolon"
-                },
-                "to_delayed_action": {
-                  "to_if_canceled": [
-                    {
-                      "key_code": "semicolon"
-                    }
-                  ],
-                  "to_if_invoked": [
-                    {
-                      "key_code": "vk_none"
-                    }
-                  ]
-                },
-                "to_if_alone": [
-                  {
-                    "halt": true,
-                    "key_code": "semicolon"
-                  }
-                ],
-                "to_if_held_down": [
-                  {
-                    "halt": true,
-                    "key_code": "right_shift"
-                  }
-                ],
-                "type": "basic"
               }
             ]
           }
